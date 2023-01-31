@@ -1,10 +1,15 @@
+import Bookings from "../Services/Bookings/Bookings";
+
 // functional component 
 
 const Home = () => {
-
+ const data = {
+    name: 'home',
+    handler: 'home'
+ }
  return (
     <div>
-       <p>Hi Hello</p>
+         <Bookings title={'From Home'} data={data} />
     </div>
  )
 }
